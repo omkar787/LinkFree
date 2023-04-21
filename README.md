@@ -1,123 +1,155 @@
-# LinkFree - EddieHub
+[![Open in GitPod](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/EddieHubCommunity/LinkFree) ![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FEddieHubCommunity%2Fmonitoring%2Fmaster%2Fapi%2Flink-free-linkfree-io%2Fuptime.json) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/EddieHubCommunity/LinkFree)](https://github.com/EddieHubCommunity/LinkFree/releases) ![GitHub repo size](https://img.shields.io/github/repo-size/EddieHubCommunity/LinkFree)
 
-LinkFree Connect audiences to all of your content with just one link. It is an open-source alternative to [Linktree](https://linktr.ee/) implemented in JavaScript. It was initially created on a YouTube [live stream](https://www.youtube.com/watch?v=Jorl_vcp-Ew).
+# What is LinkFree?
 
-![Screenshot](https://user-images.githubusercontent.com/60853067/133296120-dbdb1799-4cca-4708-81ce-05edc65e59c9.png)
+LinkFree is the Open Source alternative to LinkTree. A platform where people in tech can have a single hub to showcase their content in order to accelerate their career, whilst contributing to an Open Source project and being part of a community that has a say in where the project is going.
 
-> A note for Hacktoberfest Participants:
-> 
-> Pull requests which add or edit your information in a `data/${yourname}.json` file will NOT be counted for Hacktoberfest.
->
-> Pull requests which improve the codebase, documentation, or other aspects of the project and are in line with the core values
-> of the event will be counted - maintainers will opt in these PRs by applying the `hacktoberfest-accepted` label.
+Your profile will have links to your social media and content. You can also add your timeline, testimonials, and upcoming events that you are participating in.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/EddieHubCommunity/LinkFree)
+Here is an example of a LinkFree Profile https://linkfree.io/eddiejaoude
 
-## 👨‍💻 Demo
+![Example profile and statistics page on LinkFree with light and dark mode](https://user-images.githubusercontent.com/624760/230707268-1f8f1487-6524-4c89-aae2-ab45f0e17f39.png)
 
-Check out the website : [LinkFree](http://linkfree.eddiehub.org/)
+## Tech Stack
 
-## 👇 Prerequisites
+LinkFree was built using the following technologies:
 
-Before installation, please make sure you have already installed following tools:
+- [Next.js](https://nextjs.org/) - a framework for building server-rendered React applications
+- [MongoDB](https://www.mongodb.com/) - a NoSQL database
+- [Tailwind CSS](https://tailwindcss.com/) - a utility-first CSS framework      
+ 
 
-- [Git](https://git-scm.com/downloads)
-- [NodeJs](https://nodejs.org/en/download/)
+## 🛠️ Quickstart
 
-## 🛠️ Installation Steps
+You have 4 options to contribute to the repo, please pick your favourite from:
 
-1. Fork the project
-2. Clone the project
-3. Navigate to the project directory `cd LinkFree`
-4. Install dependencies with `npm install`
-5. Run `npm start`
-7. Optional : Run the tests with `npm run cypress:run`
+1. [GitHub UI (recommended for adding/editing your profile)](https://github.com/EddieHubCommunity/LinkFree#github-ui)
+2. [Gitpod](https://github.com/EddieHubCommunity/LinkFree#gitpod)
+3. [Local development](https://github.com/EddieHubCommunity/LinkFree#local-development)
+4. [Local development with Docker Compose](https://github.com/EddieHubCommunity/LinkFree#local-development-with-docker-compose)
 
-Alternatively, skip all the steps by using [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/EddieHubCommunity/LinkFree/)
+Brief documentation is below, but full documentation can be found here https://linkfree.io/docs
 
-## 👨‍💻 Contributing
+### GitHub UI
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-Check out [Contributing.md](Contributing.md) file for more information.
+This is great if you only want to add your Profile or make changes to it.
 
-### 🎭 To Add Your Profile
+Here is the **QuickStart** guide to add your profile - https://linkfree.io/docs/quickstart
 
-Create a file named `your-username.json` in the directory `public/data` with the following content:
+> **Note**: give extra attention to JSON formatting and the GitHub Action after you create the Pull Request
 
-Optional fields: `links` and `milestones`
+Read more in the official documentation - https://linkfree.io/docs/environments/github-ui
 
-```json
-{
-  "name": "Eddie Jaoude",
-  "bio": "Founder of EddieHub",
-  "avatar": "https://github.com/eddiejaoude.png",
-  "links": [
-    {
-      "name": "Follow me on GitHub",
-      "url": "https://github.com/eddiejaoude",
-      "icon": "github"
-    },
-    {
-      "name": "Follow me on Twitter",
-      "url": "https://twitter.com/eddiejaoude",
-      "icon": "twitter"
-    },
-    {
-      "name": "Learn more about Open Source on my YouTube channel",
-      "url": "https://youtube.com/eddiejaoude",
-      "icon": "youtube"
-    }
-  ],
-  "milestones": [
-    {
-      "title": "Started Freelancing",
-      "date": "May 2010",
-      "icon": "dollar",
-      "color": "grey",
-      "description": "Started freelancing again",
-      "url": "https://www.eddiejaoude.io/"
-    },
-    {
-      "title": "Started YouTube",
-      "image": "https://github.com/eddiejaoude.png",
-      "date": "June 2019",
-      "icon": "youtube",
-      "color": "red",
-      "description": "First real video",
-      "url": "https://youtube.com/eddiejaoude"
-    },
-    {
-      "title": "GitHub Star",
-      "date": "2020",
-      "icon": "github",
-      "color": "green",
-      "description": "Became a GitHub Star with 30 other people",
-      "url": "https://github.com/eddiejaoude"
-    },
-    {
-      "title": "GitHub Star of the Year",
-      "date": "2020",
-      "icon": "github",
-      "color": "green",
-      "description": "Won GitHub Star of the Year out of 55+ million people",
-      "url": "https://github.com/eddiejaoude"
-    }
-  ]
-}
-```
+### Gitpod
 
-Your URL will be `http://linkfree.eddiehub.org/<yourusername>`. For example: <http://linkfree.eddiehub.org/eddiejaoude>\
-Your `avatar` URL should take the format of `https://github.com/<yourusername>.png`.
+In the cloud-free development environment which will have all the dependencies you need (for example MongoDB).
+
+You can use Gitpod in the cloud [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/EddieHubCommunity/LinkFree/)
+
+Read more in the official documentation - https://linkfree.io/docs/environments/gitpod 
+
+### Local development
+
+This environment is fully on your computer and requires each dependency (for example MongoDB) to be installed and set up, but it gives you the most flexibility for customisation.
+
+#### Prerequisites
+
+Before contributing or adding a new feature, please make sure you have already installed the following tools:
+
+- [NodeJs](https://nodejs.org/en/download/) (Works with Node LTS version v16.17.0)
+- [MongoDB](https://www.mongodb.com/home)
+- Optional [NVM](https://github.com/nvm-sh/nvm): Switch Node version by using `nvm use` (on Windows, use `nvm use v16.17.0`). If this is not installed, run `nvm install v16.17.0`.
+
+#### Commands
+
+You can set this up locally with the following steps:
+
+1. copy the `.env.example` file to `.env` and update any details required
+1. MongoDB is required, it is possible to use `docker compose up` to start the MongoDB service
+1. `npm ci`
+1. `npm run dev`
+
+Read more in the official documentation https://linkfree.io/docs/environments/local-development
+
+### Local development with Docker Compose
+
+This will allow you to run your favourite IDE but not have to install any dependencies on your computer like NodeJS and MongoDB.
+
+#### Prerequisites
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://github.com/docker/compose) V2.
+
+#### Commands
+
+1. `docker compose up` 
+
+Read more in the official documentation - https://linkfree.io/docs/environments/local-development-docker-compose
+
+### 🙂 How to add YOUR Profile
+
+Step by step quickstart guide can be found in the full docs here - https://linkfree.io/docs/quickstart
+
+<!-- Testimonials STARTs Here -->
+
+## ⛩️ Testimonials
+
+Here are some testimonials from individuals who have used LinkFree:- 
+
+<!-- Section 1 -->
+
+### Francesco Ciulla
+
+<p align="center">
+  <img src="https://github.com/FrancescoXX.png" alt="Francesco Ciulla" width="200" height="200">
+</p>
+
+> "I had another similar (paid) service. I tried LinkFree for a week and  I got almost double the clicks on the links in the same period, redirecting from the same link. I decided to start using it regularly. I am very satisfied. It's not just a list of links but it's backed by a great Open Source community."
+
+- **Name :** Francesco Ciulla
+- **Bio :** Developer Advocate at daily.dev, Docker Captain, Public Speaker, Community Builder
+- **Username :** <strong><a href="https://linkfree.io/FrancescoXX">Francesco Ciulla</a></strong>
+
+<!-- Section 2 -->
+
+### Amanda Martin
+
+<p align="center">
+  <img src="https://github.com/amandamartin-dev.png" alt="Amanda Martin" width="200" height="200">
+</p>
+
+> "Where LinkFree really stands out is the ability to make meaningful connections and find collaborators due to thoughtful features that are not simply about chasing ways to build your audience. The fact that it's also Open Source really makes it the tool I was waiting for in this space."
+
+- **Name :** Amanda Martin
+- **Bio :** Developer Advocate | Always Curious | Always Silly
+- **Username :** <strong><a href="https://linkfree.io/amandamartin-dev">Amanda Martin</a></strong>
+
+<!-- Section 3 -->
+
+### Pradumna Saraf
+
+<p align="center">
+  <img src="https://github.com/Pradumnasaraf.png" alt="Pradumna Saraf" width="200" height="200">
+</p>
+
+> "LinkFree is very close to me because I have seen it evolve. With LinkFree, I have discovered so many amazing people in tech. Some of my favorite features are the barcode for profiles and testimonials. If you are reading this and don't have a profile, I highly recommend doing that. Thank you, Eddie and EddieHub community, for building this incredible app."
+
+- **Name :** Pradumna Saraf
+- **Bio :** Open Source Advocate | DevOps Engineer | EddieHub Ambassador
+- **Username :** <strong><a href="https://linkfree.io/Pradumnasaraf">Pradumna Saraf</a></strong>
+
+<!-- Testimonials ENDs Here -->
 
 ## 🛡️ License
 
-This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
+LinkFree is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-## 💪 Thanks to the all Contributors
+## 🧰 Contributing
 
-Thanks a lot for spending your time in helping LinkFree grow. Thanks a lot! Keep rocking 🍻
-[contributors](https://github.com/EddieHubCommunity/LinkFree/graphs/contributors)
+- Contributions make the open source community an amazing place to _learn_, _inspire_, and _create_.
+- Any contributions you make are **truly appreciated**.
+- Let's continue contributing to keep the community _active_ and _growing_.
 
 ## 🙏 Support
 
-This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
+Don't forget to leave a star ⭐️.
